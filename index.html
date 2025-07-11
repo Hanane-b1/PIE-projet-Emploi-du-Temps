@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISGI - Emploi du Temps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Program Selection Screen -->
+        <div id="program-selection" class="screen active">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h1>ISGI</h1>
+                    </div>
+                    <h2>Emploi du Temps</h2>
+                    <p>Sélectionnez votre filière pour consulter votre emploi du temps</p>
+                </div>
+
+                <div class="programs-grid">
+                    <div class="program-card" data-program="developpement_digital">
+                        <div class="program-icon slate">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Développement Digital</h3>
+                        <p>Programmation, Web, Mobile</p>
+                        <button class="btn-program">Voir les classes</button>
+                    </div>
+
+                    <div class="program-card" data-program="gestion_entreprises">
+                        <div class="program-icon teal">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Gestion des Entreprises</h3>
+                        <p>Management, Finance, Marketing</p>
+                        <button class="btn-program">Voir les classes</button>
+                    </div>
+
+                    <div class="program-card" data-program="infrastructure">
+                        <div class="program-icon cyan">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Infrastructure</h3>
+                        <p>Réseaux, Systèmes, Sécurité</p>
+                        <button class="btn-program">Voir les classes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Class Selection Screen -->
+        <div id="class-selection" class="screen">
+            <div class="container">
+                <div class="nav-header">
+                    <button id="back-to-programs" class="btn-back">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour aux filières
+                    </button>
+                    <div class="current-program">
+                        <i id="program-icon" class="fas fa-code"></i>
+                        <h1 id="program-name">Développement Digital</h1>
+                    </div>
+                </div>
+
+                <div class="years-grid">
+                    <div class="year-card">
+                        <div class="year-icon slate">
+                            <span>1</span>
+                        </div>
+                        <h3>Première Année</h3>
+                        <p>Classes 101 - 106</p>
+                        <div class="classes-grid" id="first-year-classes">
+                            <button class="btn-class" data-class="101" data-year="1">101</button>
+                            <button class="btn-class" data-class="102" data-year="1">102</button>
+                            <button class="btn-class" data-class="103" data-year="1">103</button>
+                            <button class="btn-class" data-class="104" data-year="1">104</button>
+                            <button class="btn-class" data-class="105" data-year="1">105</button>
+                            <button class="btn-class" data-class="106" data-year="1">106</button>
+                        </div>
+                    </div>
+
+                    <div class="year-card">
+                        <div class="year-icon teal">
+                            <span>2</span>
+                        </div>
+                        <h3>Deuxième Année</h3>
+                        <p>Classes 201 - 206</p>
+                        <div class="classes-grid" id="second-year-classes">
+                            <button class="btn-class" data-class="201" data-year="2">201</button>
+                            <button class="btn-class" data-class="202" data-year="2">202</button>
+                            <button class="btn-class" data-class="203" data-year="2">203</button>
+                            <button class="btn-class" data-class="204" data-year="2">204</button>
+                            <button class="btn-class" data-class="205" data-year="2">205</button>
+                            <button class="btn-class" data-class="206" data-year="2">206</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule View Screen -->
+        <div id="schedule-view" class="screen">
+            <div class="container-wide">
+                <div class="nav-header">
+                    <button id="back-to-classes" class="btn-back">
+                        <i class="fas fa-arrow-left"></i>
+                        Retour
+                    </button>
+                    <div class="schedule-header">
+                        <i class="fas fa-calendar"></i>
+                        <div>
+                            <h1 id="schedule-title">Emploi du Temps - Classe 101</h1>
+                            <p id="schedule-program">Développement Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-container">
+                    <div class="schedule-table-wrapper">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th class="time-header">
+                                        <i class="fas fa-clock"></i>
+                                        Horaires
+                                    </th>
+                                    <th>Lundi</th>
+                                    <th>Mardi</th>
+                                    <th>Mercredi</th>
+                                    <th>Jeudi</th>
+                                    <th>Vendredi</th>
+                                    <th>Samedi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule-body">
+                                <!-- Schedule content will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
