@@ -1,41 +1,34 @@
-# 🗓️ ISGI — Class Timetable Viewer
+# Emploi du temps ISGI
 
-A lightweight web app to browse class timetables at **ISGI Casablanca**.
-Students pick their program, then their class, and get a clean weekly schedule with module, instructor and room for each time slot.
+Application web de consultation des emplois du temps de l'ISGI Casablanca. L'étudiant choisit sa filière, puis sa classe, et obtient son planning hebdomadaire avec le module, le formateur et la salle de chaque créneau.
 
-Built as a PIE project during my Full Stack Development training at ISGI.
+Projet PIE réalisé pendant ma formation en développement full stack à l'ISGI.
 
-<!-- Add a screenshot here: docs/screenshot.png -->
+## Aperçu
+<img width="1440" height="810" alt="01-filieres" src="https://github.com/user-attachments/assets/1ec1668d-ef77-45f6-8424-cc92f8bfe32b" />
+<img width="1440" height="810" alt="02-classes" src="https://github.com/user-attachments/assets/d41a8b18-9994-47fc-bc1c-08b464733c1c" />
+<img width="1440" height="810" alt="03-emploi-du-temps" src="https://github.com/user-attachments/assets/b9fc6f9c-aebe-4e63-9314-ef1d25045ab4" />
 
-## ✨ Features
+## Fonctionnalités
 
-- Program selection: **Développement Digital**, **Gestion des Entreprises**, **Infrastructure**
-- Class selection per program and year
-- Weekly timetable grid (Monday → Saturday, 2-hour slots) with module, instructor and room
-- Back navigation between programs, classes and schedule
-- Responsive layout
+- Choix de la filière : Développement Digital, Gestion des Entreprises, Infrastructure
+- Choix de la classe par filière et par année
+- Grille hebdomadaire du lundi au samedi, par créneaux de deux heures
+- Module, formateur et salle affichés pour chaque créneau
+- Navigation retour entre filières, classes et emploi du temps
 
-## 🛠️ Tech stack
+## Technologies
 
-HTML5 · CSS3 · Vanilla JavaScript (ES6+) · Font Awesome — no framework, no build step.
+HTML5, CSS3, JavaScript (sans framework)
 
-## 🚀 Run it
+## Installation
 
 ```bash
 git clone https://github.com/Hanane-b1/PIE-projet-Emploi-du-Temps.git
 ```
 
-Then open `index.html` in your browser.
+Ouvrir ensuite `index.html` dans le navigateur.
 
-## 📁 Structure
+## Auteur
 
-```
-index.html     # Page layout
-css/style.css  # Styles
-js/data.js     # Programs, classes and schedules
-js/app.js      # Navigation and timetable rendering
-```
-
-## 👩‍💻 Author
-
-**Hanane Belhadi** — Full Stack Developer · [GitHub](https://github.com/Hanane-b1)
+Hanane Belhadi
